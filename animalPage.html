@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animal Puzzle</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Css/style2.css">
+        <script src="https://kit.fontawesome.com/2e646d6873.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="decrease()">
+          <!-- start header-->
+    <header>
+        <i id="mute" class="fas fa-volume-mute"></i>
+    <audio id="clapaudio">
+        <source src="audio/videoplayback.mp3">
+    </audio>
+    <audio id="looseraudio">
+        <source src="audio/looser.mp3">
+    </audio>
+    <audio id="backgroundaudio" >
+        <source src="audio/backaudio.mp3">
+    </audio>
+    </header>
+    <h1 class="fun"> *_* Let's Fun & Learn *_*</h1>
+
+       <!--right side-->
+       <div style=" height: 16%;position: relative;">
+       <i id="true" class="fas fa-check-circle" style="transform: scale(2,2);"></i>
+       <i id="false" class="fas fa-times-circle" style="transform: scale(2,2);"></i>
+       <progress id="prog" value="20" max="20"></progress>
+    </div>
+       <aside id="rightSide">
+        
+        <div class="f">
+            <div class="first-row" id = "drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="first-row" id = "drop2" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+            <div class="first-row" id = "drop3" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+            <div class="first-row" id = "drop4" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <br>
+    </div>
+
+    </aside>
+    <aside id="rightSide2">
+        <img src="images/I.PNG" id="pic1" draggable="true" ondragstart="drag(event)">
+        <img src="images/L.PNG" id="pic2" draggable="true" ondragstart="drag(event)">
+        <img src="images/N.PNG" id="pic3" draggable="true" ondragstart="drag(event)">
+        <img src="images/o.PNG" id="pic4" draggable="true" ondragstart="drag(event)">
+        
+    </aside>
+
+   
+      <!--left side-->
+    <aside id="leftSide">
+        <img src="images/lion.jpg">
+    
+    </aside>
+
+    <div style="clear: both"></div>
+   
+    
+     <!--footer-->
+    <footer>
+        <span>Copyright &copy; 2020 shereen saeed, puzzle 
+            game for kids.com</span>
+    </footer>
+    <script src="javascript.js"></script>
+
+    </body>
+</html>
